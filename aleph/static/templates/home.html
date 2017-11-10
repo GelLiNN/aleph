@@ -14,7 +14,8 @@
         Search documents
       </h2>
 
-      <p><a href="http://amabhungane.co.za/article/2017-11-10-guptaleaks-released-to-journalists-worldwide">Find out how to get access at amaBhungane</a>.</p>
+      <p ng-show="!session.logged_in"><a href="http://amabhungane.co.za/article/2017-11-10-guptaleaks-released-to-journalists-worldwide">Find out how to get access at amaBhungane</a>.</p>
+      <p ng-show="session.logged_in">Search documents, emails and files from the #GuptaLeaks.</p>
 
       <form class="form-horizontal actions" role="search" ng-submit="searchDocuments(form)">
         <div class="input-group" ng-show="!session.logged_in">
