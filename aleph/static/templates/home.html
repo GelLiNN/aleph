@@ -2,7 +2,7 @@
   <h1 ng-show="session.logged_in">{{::statistics.documents_count + statistics.entities_count | number}} leads</h1>
   <p ng-show="session.logged_in" class="teaser">for your investigations</p>
   <h1 ng-show="!session.logged_in">#GuptaLeaks</h1>
-  <p ng-show="!session.logged_in" class="teaser">Sign in to search</p>
+  <p ng-show="!session.logged_in" class="teaser">Sign in to search documents, emails and files</p>
 </div>
 
 <div class="home screen">
@@ -14,9 +14,7 @@
         Search documents
       </h2>
 
-      <p>
-        Search documents, emails and files from the #GuptaLeaks.
-      </p>
+      <p><a href="http://amabhungane.co.za/article/2017-11-10-guptaleaks-released-to-journalists-worldwide">Find out how to get access at amaBhungane</a>.</p>
 
       <form class="form-horizontal actions" role="search" ng-submit="searchDocuments(form)">
         <div class="input-group" ng-show="!session.logged_in">
